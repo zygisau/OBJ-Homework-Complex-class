@@ -77,7 +77,7 @@ Complex operator+=(const Complex c)
 
 **Kompiliatorius leidžia abiem realizacijom.**
 
-![rule](pictures\rule.png)
+![rule](https://github.com/zygisau/OBJ-Homework-Complex-class/blob/master/pictures/rule.png)
 
 > An ***lvalue*** (*locator value*) represents an **object that occupies some identifiable location** in memory (i.e. has an address).
 >
@@ -85,7 +85,7 @@ Complex operator+=(const Complex c)
 
 #### Kodėl stream ne per reference grąžinti negalima?
 
-![iostream reference](pictures\iostream reference.png)
+![iostream reference](https://github.com/zygisau/OBJ-Homework-Complex-class/blob/master/pictures/iostream%20reference.png)
 
 
 
