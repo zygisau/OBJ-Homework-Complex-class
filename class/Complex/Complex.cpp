@@ -11,9 +11,9 @@ Complex& Complex::operator*=(const Complex c) {
     return *this;
 } // Realizuokite patys!
 
-Complex operator+(Complex& a, const Complex& b) { return a += b; }
+Complex operator+(Complex a, const Complex& b) { return a += b; }
 
-Complex operator-(Complex& a, const Complex& b) { return a -= b; }
+Complex operator-(Complex a, const Complex& b) { return a -= b; }
 
 Complex operator-(const Complex& a)  { // vienanaris minus
     return Complex{ -a.real(), -a.imag() }; // neiginys
