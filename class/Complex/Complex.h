@@ -25,12 +25,12 @@ public:
     Complex& operator*=(const Complex c);
 };
 
-Complex operator+(Complex& a, const Complex& b);
-Complex operator-(Complex& a, const Complex& b);
+Complex operator+(Complex a, const Complex& b);
+Complex operator-(Complex a, const Complex& b);
 Complex operator-(const Complex& a);
-Complex operator*(Complex& a, const Complex& b);
+Complex operator*(Complex a, const Complex& b);
 bool operator==(const Complex a, const Complex b);
-bool operator!=(const Complex& a, const Complex& b);
+bool operator!=(const Complex a, const Complex b);
 ostream& operator<<(std::ostream& out, const Complex &a);
 istream& operator>>(std::istream& in, Complex &a);
 

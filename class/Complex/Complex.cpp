@@ -25,7 +25,7 @@ bool operator==(const Complex a, const Complex b) {
     return a.real() == b.real() && a.imag() == b.imag();
 }
 
-bool operator!=(const Complex& a, const Complex& b) { return !(a == b); }
+bool operator!=(const Complex a, const Complex b) { return !(a == b); }
 
 ostream& operator<<(ostream& out, const Complex &a) {
     out << a.real() << ( (a.imag() > 0) ? " + " : " " ) << a.imag() << "i\n";
@@ -37,14 +37,5 @@ std::istream& operator>>(std::istream& in, Complex &a) {
     in >> sk1 >> sk2;
     a.real(sk1);
     a.imag(sk2);
-
-//    double sk;
-//    in >> sk;
-//    a.real(sk);
-//    in >> sk;
-//    a.imag(sk);
-
-//    a.inputReal(in); alternatyva
-//    a.inputImag(in);
     return in;
 }

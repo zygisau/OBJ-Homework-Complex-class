@@ -12,12 +12,12 @@ public:
     double imag() const { return im; }
     double real(double sk) { return re = sk; }
     double imag(double sk) { return im = sk; }
-    istream& inputReal(std::istream& stream) {return stream >> re; } // input interface
-    istream& inputImag(std::istream& stream) {return stream >> im; } //
+    istream& inputReal(std::istream& stream) {return stream >> re; }
+    istream& inputImag(std::istream& stream) {return stream >> im; }
 
-    Complex& operator+=(Complex c) { re += c.re, im += c.im; return *this;  }
-    Complex& operator-=(Complex c) { re -= c.re, im -= c.im;  return *this;  }
-    Complex& operator*=(Complex c);
+    Complex& operator+=(const Complex c) { re += c.re, im += c.im; return *this;  }
+    Complex& operator-=(const Complex c) { re -= c.re, im -= c.im;  return *this;  }
+    Complex& operator*=(const Complex c);
 };
 ```
 
